@@ -31,7 +31,7 @@ async function run() {
     // await client.connect();
     // Send a ping to confirm a successful connection
 
-    const database = client.db("E-Commerce");
+    const database = client.db("Furniture");
     const usersCollection = database.collection("users");
     const categoriesCollection = database.collection("categories");
     const subcategoriesCollection = database.collection("subcategories");
@@ -1992,7 +1992,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to you in E-Commerce Website API");
+  res.send("Welcome to you in Furniture Website API");
 });
 
 app.listen(port, () => {
